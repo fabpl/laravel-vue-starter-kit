@@ -11,6 +11,11 @@ export interface BreadcrumbItem {
     href: string;
 }
 
+export interface NavGroup {
+    title: string;
+    items: NavItem[];
+}
+
 export interface NavItem {
     title: string;
     href: string;
@@ -21,6 +26,7 @@ export interface NavItem {
 export interface SharedData extends PageProps {
     auth: Auth;
     name: string;
+    sidebarOpen: boolean;
     ziggy: Config & { location: string };
 }
 

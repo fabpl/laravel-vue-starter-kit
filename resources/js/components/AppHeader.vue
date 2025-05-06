@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Breadcrumbs from '@/components/app/Breadcrumbs.vue';
-import Logo from '@/components/app/Logo.vue';
-import LogoIcon from '@/components/app/LogoIcon.vue';
+import AppLogo from '@/components/AppLogo.vue';
+import AppLogoIcon from '@/components/AppLogoIcon.vue';
+import Breadcrumbs from '@/components/Breadcrumbs.vue';
 import { Button } from '@/components/ui/button';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList, navigationMenuTriggerStyle } from '@/components/ui/navigation-menu';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
@@ -53,7 +53,7 @@ const rightNavItems: NavItem[] = [];
                         <SheetContent side="left" class="w-[300px] p-6">
                             <SheetTitle class="sr-only">Navigation Menu</SheetTitle>
                             <SheetHeader class="flex justify-start text-left">
-                                <LogoIcon class="size-6 fill-current text-black dark:text-white" />
+                                <AppLogoIcon class="size-6 fill-current text-black dark:text-white" />
                             </SheetHeader>
                             <div class="flex h-full flex-1 flex-col justify-between space-y-4 py-6">
                                 <nav class="-mx-3 space-y-1">
@@ -86,8 +86,8 @@ const rightNavItems: NavItem[] = [];
                     </Sheet>
                 </div>
 
-                <Link href="/" class="flex items-center gap-x-2">
-                    <Logo />
+                <Link href="/public" class="flex items-center gap-x-2">
+                    <AppLogo />
                 </Link>
 
                 <!-- Desktop Menu -->
